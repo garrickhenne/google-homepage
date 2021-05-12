@@ -1,72 +1,91 @@
-.middle-images {
+/* html, 
+body {
+    height: 100%;
+} */
+
+
+.container {
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.logo-google {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    width: auto;
-    vertical-align: bottom;
-}
-
-.search-input {
-    background: white;
-    border-radius: 24px;
+.input-search {
+    border-radius: 50px;
+    background-color: transparent;
     border: 1px solid #dfe1e5;
-    width: auto;
+    height: 44px;
+    width: 582px;
+    max-width: 584px;
+    padding: 0 40px;
 }
 
-.search-input:hover {
-    background-color: #fff;
+.search-box {
+    padding: 20px;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.input-search:hover {
+    background-color: white;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
 
-.search-box {
-    width: auto;
-    max-width: 584px;
-    position: relative;
-    margin: 0 auto;
+.material-icons {
+    color: #9aa0a6;
 }
 
-.outer-search-box {
-    padding: 20px;
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 0em;
 }
 
-.container {
+#search-icon {
+    position: absolute;
+    padding-left: 10px;
+}
+
+.header-items {
+    display: flex;
+}
+
+.header-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "header header header"
-        "content content content"
-        "content content content"
-        "footer footer footer";
+    padding: 8px;
+    align-items: center;
 }
 
-.logo {
-    justify-self: center;
+.header-rhs {
+    display: flex;
+    justify-self: end;
 }
 
-.share {
-    justify-self: start;
-    align-self: end;
-    opacity: 0.8;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.footer-area {
-    grid-area: footer;
+li {
+    padding: 0px 10px 0px 10px;
 }
 
-button {
-    border: none;
-    background: none;
+a {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
 }
 
-div {
-    display: block;
+#app {
+    color: #5f6368;
+}
+
+.avatar {
+    border-radius: 50%;
 }
